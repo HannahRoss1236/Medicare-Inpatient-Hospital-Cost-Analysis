@@ -41,10 +41,10 @@ Built as a star schema:
 ## Key Findings
 
 - **Total Medicare inpatient payments were $90.9B in 2024**, across 4.95M hospital stays
-- **Hospitals' list prices average about 5x what Medicare actually pays** — the gap between "charges" and "payments" is the single biggest story in the data
-- **Payment per stay varies nearly 2.5x by state**, from ~$13,100 in Mississippi to ~$33,000 in D.C.
-- **Sepsis is the single largest spending category** at $10.5B, driven by volume (577K stays) rather than high cost per case
-- **For hip/knee replacement (DRG 470), payments range from $6,400 to over $42,000** across 1,212 hospitals — the middle 80% of hospitals fall between $13,000 and $21,600
+- **Hospitals' list prices average about 5x what Medicare actually pays**, the gap between "charges" and "payments" is important to analyze further and identify the reasoning behind
+- **Payment per stay varies nearly 2.5x by state**, from ~$13,100 in Mississippi to ~$33,000 in DC
+- **Sepsis is the single largest spending category** at $10.5B, this could be driven by volume (577K stays) rather than high cost per case and can be elevated for a consistent count
+- **For hip/knee replacement (DRG 470), payments range from $6,400 to over $42,000** across 1,212 hospitals, the middle 80% of hospitals fall between $13,000 and $21,600
 
 ## SQL Highlights
 
