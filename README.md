@@ -74,9 +74,9 @@ GROUP BY 1, 2
 HAVING COUNT(*) > 50
 ORDER BY max_pay DESC;
 ```
-More queries are in [Open Analysis Script](Database.sql)
-More queries are in [Open Analysis Script] (Creating_Star_Schema.sql)
-More queries are in [Open Analysis Script](Analysis.sql)
+More queries are in [Database.sql](Database.sql)
+More queries are in [Creating_Star_Schema.sql](Creating_Star_Schema.sql)
+More queries are in [Analysis.sql](Analysis.sql)
 
 ## Limitations
 
