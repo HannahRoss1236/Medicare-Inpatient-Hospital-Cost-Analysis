@@ -10,7 +10,7 @@ Analyzing $90B+ in Medicare inpatient payments to identify cost variation across
 
 
 ## The Research Question
-How much does Medicare actually pay for the same procedure across different hospitals, and where is the $90B in annual inpatient spending going? This project identifies the cost variation, state level differences, and the gap between hospital list prices and what Medicare actually pays.
+How much does Medicare actually pay for the same procedure across different hospitals, how does billing alter by states, and where is the $90B in annual inpatient spending going? This project identifies the cost variation, state level differences, and the gap between hospital list prices and what Medicare actually pays.
 
 ## Data Source
 
@@ -74,9 +74,7 @@ GROUP BY 1, 2
 HAVING COUNT(*) > 50
 ORDER BY max_pay DESC;
 ```
-More queries are in [Database.sql](Database.sql)
-More queries are in [Creating_Star_Schema.sql](Creating_Star_Schema.sql)
-More queries are in [Analysis.sql](Analysis.sql)
+More queries are in [Database.sql](Database.sql), [Creating_Star_Schema.sql](Creating_Star_Schema.sql), and [Analysis.sql](Analysis.sql)
 
 ## Limitations
 
