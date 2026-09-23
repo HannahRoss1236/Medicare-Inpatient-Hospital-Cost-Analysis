@@ -2,16 +2,15 @@
 
 Analyzing $90B+ in Medicare inpatient payments to identify cost variation across hospitals, states, and procedures, using PostgreSQL for data modeling and Tableau Public for visualization.
 
-**[View the live dashboard on Tableau Public →][(YOUR_TABLEAU_PUBLIC_LINK_HERE)](https://public.tableau.com/app/profile/hannah.ross4193/vizzes) **
+**[View the live dashboard on Tableau Public →](https://public.tableau.com/app/profile/hannah.ross4193/vizzes) **
 
-![Overview Dashboard] <img width="1998" height="1598" alt="Overview" src="https://github.com/user-attachments/assets/20ca7974-056a-4deb-b508-492e4fb2e359" />
+<img width="1998" height="1598" alt="Overview" src="https://github.com/user-attachments/assets/20ca7974-056a-4deb-b508-492e4fb2e359" />
 
 <img width="1998" height="1598" alt="Price Variation" src="https://github.com/user-attachments/assets/7b33f0c8-bab6-4dc7-aec2-fe7bcc7235ff" />
 
 
-## The Question
-
-How much does Medicare actually pay for the same procedure across different hospitals, and where is the $90B in annual inpatient spending going? This project explores cost variation, state level differences, and the gap between hospital list prices and what Medicare actually pays.
+## The Research Question
+How much does Medicare actually pay for the same procedure across different hospitals, and where is the $90B in annual inpatient spending going? This project identifies the cost variation, state level differences, and the gap between hospital list prices and what Medicare actually pays.
 
 ## Data Source
 
@@ -75,19 +74,11 @@ GROUP BY 1, 2
 HAVING COUNT(*) > 50
 ORDER BY max_pay DESC;
 ```
-
-More queries are in [Open Analysis Script](analysis.sql)
-
-## Repo Structure
-├── sql/
-│ ├── Database.sql
-│ ├── Creating_Star_Schema.sql
-│ └── Analysis.sql
-├── images/
-│ └── dashboard_overview.png
-└── README.md
+More queries are in [Open Analysis Script](Database.sql)
+More queries are in [Open Analysis Script] (Creating_Star_Schema.sql)
+More queries are in [Open Analysis Script](Analysis.sql)
 
 ## Limitations
 
-- Covers Medicare fee-for-service only — not private insurance or Medicare Advantage
-- CMS suppresses hospital/DRG combinations with 10 or fewer discharges, which can skew rankings for rare procedures
+- Covers Medicare fee-for-service only, which doesn't evaluate the billing of other private insurance or Medicare Advantage
+- I removed hospital/DRG combinations with 10 or fewer discharges from analysis, which could skew rankings for the more rare procedures
